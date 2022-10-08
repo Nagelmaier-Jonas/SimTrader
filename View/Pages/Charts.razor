@@ -1,8 +1,5 @@
 ﻿@page "/"
 @using Domain.LogicHandlers
-@using Microsoft.AspNetCore.Authentication
-@using System.Text.Json
-@using Model
 @using Model.ApiData
 @using Color = MudBlazor.Color
 <h3>Charts</h3>
@@ -71,23 +68,25 @@
     }
 
     private void TestApiStock(string symbol){
-        Stock? stock = TiingoAPI.GetInstance().GetLatestStockData(symbol);
+        Stock stock = TiingoAPI.GetInstance().GetLatestStockData(symbol);
         if (stock != null){
             Console.WriteLine(stock.ToString());
         }
     }
     
     private void TestApiStockMeta(string symbol){
-        StockMeta? meta = TiingoAPI.GetInstance().GetMetaStockData(symbol);
+        StockMeta meta = TiingoAPI.GetInstance().GetMetaStockData(symbol);
         if (meta != null){
             Console.WriteLine(meta.ToString());
         }
     }
     
     private void TestApiStockHistory(string symbol, DateTime startDate, DateTime endDate){
-        StockHistory? history = TiingoAPI.GetInstance().GetStockHistoryData(symbol, startDate, endDate);
+        StockHistory history = TiingoAPI.GetInstance().GetStockHistoryData(symbol, startDate, endDate);
         if (history != null){
-            Console.WriteLine(history.ToString());
+            foreach (var stock in history.Stocks){
+                Console.WriteLine(stock.ToString());
+            }
         }
     }
 

@@ -1,5 +1,7 @@
-﻿namespace Model.ApiData;
+﻿using Newtonsoft.Json;
+
+namespace Model.ApiData;
 
 public class StockHistory{
-    public List<Stock> Stocks{ get; set; }
+    [JsonProperty("history")] public List<Stock> Stocks{ get; set; }
 }

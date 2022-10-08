@@ -21,22 +21,24 @@ public sealed class JsonMapper{
         Stock? stock = JsonSerializer.Deserialize<Stock>(json.Substring(1,json.Length - 2));
         return stock;
     }
-    //TODO: Fix Methode
     public StockMeta? MapToStockMeta(string json){
-        Console.WriteLine(json);
-        StockMeta? stock = JsonSerializer.Deserialize<StockMeta>(json.Substring(1,json.Length - 2));
-        return stock;
+        StockMeta? stockMeta = JsonSerializer.Deserialize<StockMeta>(json);
+        return stockMeta;
     }
-    //TODO: Fix Methode
     public StockHistory? MapToStockHistory(string json){
-        StockHistory history = new StockHistory();
-        json = json.Substring(1, json.Length - 2);
-        Regex regex = new Regex(@"\{.*?\}");
-        MatchCollection matches = regex.Matches(json);
-        for (int i = 0; i < matches.Count; i++){
-            Stock s = MapToStock(matches[i].ToString());
-            history.Stocks.Add(s);
+        json = json.Substring(1,json.Length - 2);
+        json = json.Substring(1,json.Length - 2);
+        string[] jsonSplit = Regex.Split(json, "},{");
+        for (int i = 0; i < jsonSplit.Length; i++){
+            jsonSplit[i] = "{" + jsonSplit[i] + "}";
         }
-        return history;
+        List<Stock> stocks = new List<Stock>();
+        foreach (string s in jsonSplit){
+            stocks.Add(JsonSerializer.Deserialize<Stock>(s));
+        }
+        StockHistory stockHistory = new StockHistory{
+            Stocks = stocks
+        };
+        return stockHistory;
     }
 }
