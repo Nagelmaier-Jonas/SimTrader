@@ -41,4 +41,21 @@ public sealed class JsonMapper{
         };
         return stockHistory;
     }
+    
+    public SearchResult? MapToSearchResult(string json){
+        json = json.Substring(1,json.Length - 2);
+        json = json.Substring(1,json.Length - 2);
+        string[] jsonSplit = Regex.Split(json, "},{");
+        for (int i = 0; i < jsonSplit.Length; i++){
+            jsonSplit[i] = "{" + jsonSplit[i] + "}";
+        }
+        List<Company> company = new List<Company>();
+        foreach (string s in jsonSplit){
+            company.Add(JsonSerializer.Deserialize<Company>(s));
+        }
+        SearchResult stockHistory = new SearchResult{
+            Companies = company
+        };
+        return stockHistory;
+    }
 }

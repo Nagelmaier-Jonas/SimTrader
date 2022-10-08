@@ -10,16 +10,16 @@ main[b-0gsfdbd658] {
 }
 
 .sidebar[b-0gsfdbd658] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, #6a6a6a 0%, #8bc53f 70%);
 }
 
 .top-row[b-0gsfdbd658] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
-    height: 3.5rem;
     display: flex;
     align-items: center;
+    height: fit-content;
 }
 
     .top-row[b-0gsfdbd658]  a, .top-row .btn-link[b-0gsfdbd658] {
@@ -69,14 +69,23 @@ main[b-0gsfdbd658] {
         padding-right: 1.5rem !important;
     }
 }
+.page-content[b-0gsfdbd658] {
+    height: -webkit-fill-available;
+}
+.top-bar[b-0gsfdbd658] {
+    height: fit-content;
+}
+.viewport[b-0gsfdbd658]{
+    width: -webkit-fill-available;
+}
 /* _content/View/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-lyks8ctlqz] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .top-row[b-lyks8ctlqz] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    height: fit-content;
+    background-color: rgba(0,0,0,0.15);
 }
 
 .navbar-brand[b-lyks8ctlqz] {
@@ -132,3 +141,4 @@ main[b-0gsfdbd658] {
         display: block;
     }
 }
+/* _content/View/Shared/TopBar.razor.rz.scp.css */

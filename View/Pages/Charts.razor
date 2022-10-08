@@ -1,7 +1,6 @@
 ﻿@page "/"
 @using Domain.LogicHandlers
 @using Model.ApiData
-@using Color = MudBlazor.Color
 <h3>Charts</h3>
 
 <DemoContainer>
@@ -22,20 +21,9 @@
 <MudButtonGroup Color="Color.Primary" Variant="Variant.Filled">
     <MudButton Variant="Variant.Filled" OnClick="@(() => TestApiStock("aapl"))">Latest Stock</MudButton>
     <MudButton Variant="Variant.Filled" OnClick="@(() => @TestApiStockMeta("aapl"))">Stock Meta</MudButton>
+    <MudButton Variant="Variant.Filled" OnClick="@(() => @TestApiSearch("apple"))">Search Result</MudButton>
     <MudButton Variant="Variant.Filled" OnClick="@(() => @TestApiStockHistory("aapl", DateTime.Now.AddDays(-7), DateTime.Now))">Stock History</MudButton>
 </MudButtonGroup>
-
-<MudExpansionPanels>
-    <MudExpansionPanel Text="Latest Stock" value ="@LatestStock">
-        No Data!
-    </MudExpansionPanel>
-    <MudExpansionPanel Text="Stock Meta" value="@StockMeta">
-        No Data!
-    </MudExpansionPanel>
-    <MudExpansionPanel Text="Stock History" value="@stockPrices">
-        No Data!
-    </MudExpansionPanel>
-</MudExpansionPanels>
 
 @code {
 
@@ -78,6 +66,15 @@
         StockMeta meta = TiingoAPI.GetInstance().GetMetaStockData(symbol);
         if (meta != null){
             Console.WriteLine(meta.ToString());
+        }
+    }
+
+    private void TestApiSearch(string symbol){
+        SearchResult searchResult = TiingoAPI.GetInstance().SearchStock(symbol);
+        if (searchResult != null){
+            foreach (var company in searchResult.Companies){
+                Console.WriteLine(company.ToString());
+            }
         }
     }
     

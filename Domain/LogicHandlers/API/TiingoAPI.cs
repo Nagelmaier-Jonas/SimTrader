@@ -41,4 +41,11 @@ public sealed class TiingoAPI{
         return JsonMapper.GetInstance().MapToStockHistory(json);
     }
     
+    public SearchResult? SearchStock(string needle){
+        var url = $"https://api.tiingo.com/tiingo/utilities/search?query={needle}&token={_token}";
+        var response = _client.GetAsync(url).Result;
+        var json = response.Content.ReadAsStringAsync().Result;
+        return JsonMapper.GetInstance().MapToSearchResult(json);
+    }
+    
 }

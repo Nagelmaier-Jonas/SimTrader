@@ -17,7 +17,6 @@ builder.Services.AddDbContext<SimTraderDbContext>(
 //Configure MudBlazor Snackbar
 builder.Services.AddMudServices(config => {
     config.SnackbarConfiguration.PositionClass = Defaults.Classes.Position.BottomEnd;
-
     config.SnackbarConfiguration.PreventDuplicates = true;
     config.SnackbarConfiguration.NewestOnTop = false;
     config.SnackbarConfiguration.ShowCloseIcon = true;

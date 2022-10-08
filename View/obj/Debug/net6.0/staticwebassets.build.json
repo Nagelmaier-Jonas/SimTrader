@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+v2FPmhutKcXrhT3V0wSnmUQRUyXQ3Qh6ILefLA8Co4=",
+  "Hash": "+ta2PuHkhg0/lnHkIH2d2XsnPkn73ofFJt3Mh29g8OM=",
   "Source": "View",
   "BasePath": "_content/View",
   "Mode": "Default",
@@ -68,27 +68,10 @@
       "OriginalItemSpec": "C:\\Users\\joena\\.nuget\\packages\\blazor-apexcharts\\0.9.14-beta\\staticwebassets\\js\\blazor-apex-charts.js"
     },
     {
-      "Identity": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\MudBlazor.css",
+      "Identity": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.16\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\",
-      "BasePath": "_content/MudBlazor",
-      "RelativePath": "MudBlazor.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\MudBlazor.css"
-    },
-    {
-      "Identity": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\MudBlazor.min.css",
-      "SourceId": "MudBlazor",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.16\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -99,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.16\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.16\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.16\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -116,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.17-dev.1\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\joena\\.nuget\\packages\\mudblazor\\6.0.16\\staticwebassets\\MudBlazor.min.js"
     },
     {
       "Identity": "C:\\Users\\joena\\RiderProjects\\SimTrader\\View\\obj\\Debug\\net6.0\\scopedcss\\bundle\\View.styles.css",
@@ -372,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\joena\\RiderProjects\\SimTrader\\View\\wwwroot\\Resources\\Images\\Logo.svg",
+      "SourceId": "View",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joena\\RiderProjects\\SimTrader\\View\\wwwroot\\",
+      "BasePath": "_content/View",
+      "RelativePath": "Resources/Images/Logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\Images\\Logo.svg"
     }
   ]
 }

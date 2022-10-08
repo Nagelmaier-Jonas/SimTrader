@@ -64,3 +64,4 @@ C:\Users\joena\RiderProjects\SimTrader\View\bin\Debug\net6.0\Model.pdb
 C:\Users\joena\RiderProjects\SimTrader\View\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\joena\RiderProjects\SimTrader\View\bin\Debug\net6.0\Mapster.dll
 C:\Users\joena\RiderProjects\SimTrader\View\bin\Debug\net6.0\Mapster.Core.dll
+C:\Users\joena\RiderProjects\SimTrader\View\obj\Debug\net6.0\scopedcss\Shared\TopBar.razor.rz.scp.css

@@ -10,6 +10,7 @@
         "dependencies": {
           "Mapster": "7.4.0-pre03",
           "Model": "1.0.0",
+          "MudBlazor": "6.0.16",
           "Newtonsoft.Json": "13.0.2-beta2"
         },
         "runtime": {
@@ -268,15 +269,15 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "MudBlazor/6.0.17-dev.1": {
+      "MudBlazor/6.0.16": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "6.0.9",
           "Microsoft.AspNetCore.Components.Web": "6.0.9"
         },
         "runtime": {
           "lib/net6.0/MudBlazor.dll": {
-            "assemblyVersion": "6.0.17.0",
-            "fileVersion": "6.0.17.0"
+            "assemblyVersion": "6.0.16.0",
+            "fileVersion": "6.0.16.0"
           }
         }
       },
@@ -530,7 +531,7 @@
       },
       "Model/1.0.0": {
         "dependencies": {
-          "MudBlazor": "6.0.17-dev.1",
+          "MudBlazor": "6.0.16",
           "Newtonsoft.Json": "13.0.2-beta2",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.2"
         },
@@ -721,12 +722,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "MudBlazor/6.0.17-dev.1": {
+    "MudBlazor/6.0.16": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-idvDhqkSR+hOH8ys2ghABxH6xTNhgckwqeQS8ohMsUBBDg0LwpTGbLqCgKE0l3J8LqmuEbVf/5dJzX6H4vQETQ==",
-      "path": "mudblazor/6.0.17-dev.1",
-      "hashPath": "mudblazor.6.0.17-dev.1.nupkg.sha512"
+      "sha512": "sha512-GTHTXtNdHnjE5QvLwScwz4YOevlAmKHx3fkFQWeO3Yj52P4FWdTSFkVxtAXBHlruWsz92pjSbOBStZ/nY/vMyg==",
+      "path": "mudblazor/6.0.16",
+      "hashPath": "mudblazor.6.0.16.nupkg.sha512"
     },
     "MySqlConnector/2.1.2": {
       "type": "package",

@@ -419,7 +419,7 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "MudBlazor/6.0.17-dev.1": {
+      "MudBlazor/6.0.16": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "6.0.9",
@@ -1127,10 +1127,10 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "MudBlazor/6.0.17-dev.1": {
-      "sha512": "idvDhqkSR+hOH8ys2ghABxH6xTNhgckwqeQS8ohMsUBBDg0LwpTGbLqCgKE0l3J8LqmuEbVf/5dJzX6H4vQETQ==",
+    "MudBlazor/6.0.16": {
+      "sha512": "GTHTXtNdHnjE5QvLwScwz4YOevlAmKHx3fkFQWeO3Yj52P4FWdTSFkVxtAXBHlruWsz92pjSbOBStZ/nY/vMyg==",
       "type": "package",
-      "path": "mudblazor/6.0.17-dev.1",
+      "path": "mudblazor/6.0.16",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1142,9 +1142,8 @@
         "buildTransitive/MudBlazor.props",
         "lib/net6.0/MudBlazor.dll",
         "lib/net6.0/MudBlazor.xml",
-        "mudblazor.6.0.17-dev.1.nupkg.sha512",
+        "mudblazor.6.0.16.nupkg.sha512",
         "mudblazor.nuspec",
-        "staticwebassets/MudBlazor.css",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
       ]
@@ -1385,7 +1384,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0-rc.1.22426.7",
-      "MudBlazor >= 6.0.17-dev.1",
+      "MudBlazor >= 6.0.16",
       "Newtonsoft.Json >= 13.0.2-beta2",
       "Pomelo.EntityFrameworkCore.MySql >= 6.0.2"
     ]
@@ -1435,7 +1434,7 @@
           },
           "MudBlazor": {
             "target": "Package",
-            "version": "[6.0.17-dev.1, )"
+            "version": "[6.0.16, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
