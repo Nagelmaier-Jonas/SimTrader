@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "m2+sTJZtAAZR/HLkPMLKVn6Hj2pXLR8QIobYvXA3LhhZpSstBlO7EZR7w8d85sv3P24Nucx5XIMw4krcBdwnHA==",
+  "dgSpecHash": "Dq6Gmjl+YrxSbmK7rnpMLggwgXxA0wbBSIRiZYIyDTjnUAxxUbApY8Lbeoo31Ojo1Nyw6wOYXqIAsZVYp89U0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\joena\\RiderProjects\\SimTrader\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\joena\\.nuget\\packages\\blazor-apexcharts\\0.9.14-beta\\blazor-apexcharts.0.9.14-beta.nupkg.sha512",
     "C:\\Users\\joena\\.nuget\\packages\\mapster\\7.4.0-pre03\\mapster.7.4.0-pre03.nupkg.sha512",
     "C:\\Users\\joena\\.nuget\\packages\\mapster.core\\1.2.1-pre02\\mapster.core.1.2.1-pre02.nupkg.sha512",
     "C:\\Users\\joena\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.9\\microsoft.aspnetcore.authorization.6.0.9.nupkg.sha512",

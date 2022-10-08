@@ -1,19 +1,20 @@
 ﻿@using System.Net.Http.Json
 @using Domain.LogicHandlers
 @using Model.ApiData
+@using MudBlazor.Utilities
 
-<MudPaper Elevation="25">
+<MudPaper Elevation="25" Class="top-bar">
     <MudToolBar>
-        <MudGrid>
+        @*<MudGrid >
             <MudItem xs="12" sm="6" md="4">
                 <MudAutocomplete T="Company" Label="Enter a Ticker" @bind-Value="company"
-                                 SearchFunc="@Search" ToStringFunc="@(e=> e==null?null : $"{e.name} ({e.ticker})")" >
+                                 SearchFunc="@Search" ToStringFunc="@(e => e == null ? null : $"{e.name} ({e.ticker})")">
                 </MudAutocomplete>
             </MudItem>
-        </MudGrid>
-        <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Outlined.Settings" Color="Color.Inherit" />
-        <MudIconButton Icon="@Icons.Material.Outlined.PeopleAlt" />
+        </MudGrid>*@
+        <MudSpacer/>
+        <MudIconButton Icon="@Icons.Material.Outlined.Settings" Color="Color.Inherit"/>
+        <MudIconButton Icon="@Icons.Material.Outlined.PeopleAlt"/>
     </MudToolBar>
 </MudPaper>
 
@@ -23,4 +24,5 @@
     private async Task<IEnumerable<Company>> Search(string needle){
         return TiingoAPI.GetInstance().SearchStock(needle).Companies;
     }
+
 }

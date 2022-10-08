@@ -68,12 +68,3 @@ main[b-0gsfdbd658] {
         padding-right: 1.5rem !important;
     }
 }
-.page-content[b-0gsfdbd658] {
-    height: -webkit-fill-available;
-}
-.top-bar[b-0gsfdbd658] {
-    height: fit-content;
-}
-.viewport[b-0gsfdbd658]{
-    width: -webkit-fill-available;
-}

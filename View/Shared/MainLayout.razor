@@ -1,25 +1,52 @@
-﻿@inherits LayoutComponentBase
+﻿@using MudBlazor.Utilities
+@inherits LayoutComponentBase
 
 <PageTitle>Home</PageTitle>
 
-<MudThemeProvider/>
 <MudDialogProvider/>
 <MudSnackbarProvider/>
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme"/>
 
 <div class="page">
     <div class="sidebar">
         <NavMenu/>
+        <MudSwitch @bind-Checked="@_isDarkMode" Color="Color.Primary" Class="ma-4 mud-switch-style" T="bool"/>
     </div>
-    <div class="row viewport">
-        <div class="col-12 top-bar">
-            @*TODO:Check for Pro Licence (TopBar makes more than 1 Call per second!)*@
-            @*<TopBar/>*@
-        </div>
-        <main class="page-content">
-            <article class="content px-4">
+    <main>
+        <CascadingValue Value="@_theme">
+            <article>
+                <div class="col-12">
+                    @*TODO:Check for Pro Licence (TopBar makes more than 1 Call per second!)*@
+                    <TopBar/>
+                </div>
                 @Body
             </article>
-        </main>
-    </div>
-
+        </CascadingValue>
+    </main>
 </div>
+
+@code{
+    private bool _isDarkMode;
+
+    private MudTheme _theme = new(){
+        Palette ={
+            Primary = new MudColor("#8bc53f"),
+            Secondary = new MudColor("#688921"),
+            Tertiary = new MudColor("#425a0c"),
+            Background = new MudColor("#a7a7a7"),
+            Surface = new MudColor("#c3bfbf"),
+            AppbarBackground = new MudColor("#a7a7a7"),
+            DrawerBackground = new MudColor("#a7a7a7"),
+        },
+        PaletteDark ={
+            Primary = new MudColor("#8bc53f"),
+            Secondary = new MudColor("#688921"),
+            Tertiary = new MudColor("#425a0c"),
+            Background = new MudColor("#424242"),
+            Surface = new MudColor("#505050"),
+            AppbarBackground = new MudColor("#424242"),
+            DrawerBackground = new MudColor("#424242"),
+        }
+    };
+    
+}

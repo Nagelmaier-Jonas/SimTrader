@@ -69,15 +69,6 @@ main[b-0gsfdbd658] {
         padding-right: 1.5rem !important;
     }
 }
-.page-content[b-0gsfdbd658] {
-    height: -webkit-fill-available;
-}
-.top-bar[b-0gsfdbd658] {
-    height: fit-content;
-}
-.viewport[b-0gsfdbd658]{
-    width: -webkit-fill-available;
-}
 /* _content/View/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-lyks8ctlqz] {
     background-color: rgba(255, 255, 255, 0.1);
@@ -142,3 +133,7 @@ main[b-0gsfdbd658] {
     }
 }
 /* _content/View/Shared/TopBar.razor.rz.scp.css */
+.top-bar[b-hkdl605r6n] {
+    margin-bottom: 1em !important;
+    border-radius: 20px !important;
+}

@@ -1018,6 +1018,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Blazor-ApexCharts": "0.9.14-beta",
           "Mapster": "7.4.0-pre03",
           "Model": "1.0.0",
           "MudBlazor": "6.0.16",

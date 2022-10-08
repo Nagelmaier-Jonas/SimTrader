@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Domain/1.0.0": {
         "dependencies": {
+          "Blazor-ApexCharts": "0.9.14-beta",
           "Mapster": "7.4.0-pre03",
           "Model": "1.0.0",
           "MudBlazor": "6.0.16",
@@ -15,6 +16,18 @@
         },
         "runtime": {
           "Domain.dll": {}
+        }
+      },
+      "Blazor-ApexCharts/0.9.14-beta": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.9",
+          "Microsoft.AspNetCore.Components.Web": "6.0.9"
+        },
+        "runtime": {
+          "lib/net6.0/Blazor-ApexCharts.dll": {
+            "assemblyVersion": "0.9.14.0",
+            "fileVersion": "0.9.14.0"
+          }
         }
       },
       "Mapster/7.4.0-pre03": {
@@ -546,6 +559,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Blazor-ApexCharts/0.9.14-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v8THa+hAkHE7H0auzv4s1P7RMc0eOA3XbHDQ7Wv+Th9U6vCsyVDHS6bZ3w4sp4IfIRlmTJcmslVErHmdRrwv8g==",
+      "path": "blazor-apexcharts/0.9.14-beta",
+      "hashPath": "blazor-apexcharts.0.9.14-beta.nupkg.sha512"
     },
     "Mapster/7.4.0-pre03": {
       "type": "package",

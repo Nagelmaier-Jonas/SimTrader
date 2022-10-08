@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Blazor-ApexCharts/0.9.14-beta": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.3",
+          "Microsoft.AspNetCore.Components.Web": "6.0.3"
+        },
+        "compile": {
+          "lib/net6.0/Blazor-ApexCharts.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Blazor-ApexCharts.dll": {}
+        },
+        "build": {
+          "buildTransitive/Blazor-ApexCharts.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazor-ApexCharts.props": {}
+        }
+      },
       "Mapster/7.4.0-pre03": {
         "type": "package",
         "dependencies": {
@@ -917,6 +936,25 @@
     }
   },
   "libraries": {
+    "Blazor-ApexCharts/0.9.14-beta": {
+      "sha512": "v8THa+hAkHE7H0auzv4s1P7RMc0eOA3XbHDQ7Wv+Th9U6vCsyVDHS6bZ3w4sp4IfIRlmTJcmslVErHmdRrwv8g==",
+      "type": "package",
+      "path": "blazor-apexcharts/0.9.14-beta",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazor-apexcharts.0.9.14-beta.nupkg.sha512",
+        "blazor-apexcharts.nuspec",
+        "build/Blazor-ApexCharts.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazor-ApexCharts.props",
+        "buildTransitive/Blazor-ApexCharts.props",
+        "lib/net6.0/Blazor-ApexCharts.dll",
+        "staticwebassets/css/apexcharts.css",
+        "staticwebassets/js/apex-charts.min.js",
+        "staticwebassets/js/blazor-apex-charts.js"
+      ]
+    },
     "Mapster/7.4.0-pre03": {
       "sha512": "HQRlw1eyz1r2w7kqhSzhQ5lUATtpL9thC0nYMAZis2KCXZ6FoKMyoMdxsf8CMQVBhnWA3KFoVDrBNhk/34lZxg==",
       "type": "package",
@@ -3156,6 +3194,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Blazor-ApexCharts >= 0.9.14-beta",
       "Mapster >= 7.4.0-pre03",
       "Model >= 1.0.0",
       "MudBlazor >= 6.0.16",
@@ -3203,6 +3242,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Blazor-ApexCharts": {
+            "target": "Package",
+            "version": "[0.9.14-beta, )"
+          },
           "Mapster": {
             "target": "Package",
             "version": "[7.4.0-pre03, )"

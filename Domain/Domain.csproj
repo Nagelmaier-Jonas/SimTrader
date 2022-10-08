@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Blazor-ApexCharts" Version="0.9.14-beta" />
       <PackageReference Include="Mapster" Version="7.4.0-pre03" />
       <PackageReference Include="MudBlazor" Version="6.0.16" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta2" />
