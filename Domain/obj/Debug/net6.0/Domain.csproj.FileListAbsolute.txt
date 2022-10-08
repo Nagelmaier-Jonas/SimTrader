@@ -1,0 +1,15 @@
+C:\Users\joena\RiderProjects\SimTrader\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\joena\RiderProjects\SimTrader\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\joena\RiderProjects\SimTrader\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\joena\RiderProjects\SimTrader\Domain\bin\Debug\net6.0\Model.dll
+C:\Users\joena\RiderProjects\SimTrader\Domain\bin\Debug\net6.0\Model.pdb
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.csproj.CopyComplete
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\joena\RiderProjects\SimTrader\Domain\obj\Debug\net6.0\ref\Domain.dll

@@ -1,0 +1,102 @@
+﻿@page "/"
+@using Domain.LogicHandlers
+@using Microsoft.AspNetCore.Authentication
+@using System.Text.Json
+@using Model
+@using Model.ApiData
+@using Color = MudBlazor.Color
+<h3>Charts</h3>
+
+<DemoContainer>
+    <ApexChart TItem="StockPrice" Options="@_options" @ref="chart">
+
+        <ApexCandleSeries TItem="StockPrice"
+                          Items="stockPrices"
+                          Name="Apex Stock Price"
+                          XValue="@(e => e.Date.ToString("yyyy MMMM dd"))"
+                          Open="@(e => e.Open)"
+                          High="@(e => e.High)"
+                          Low="@(e => e.Low)"
+                          Close="@(e => e.Close)"
+                          OrderByDescending="e=> e.X" />
+    </ApexChart>
+</DemoContainer>
+
+<MudButtonGroup Color="Color.Primary" Variant="Variant.Filled">
+    <MudButton Variant="Variant.Filled" OnClick="@(() => TestApiStock("aapl"))">Latest Stock</MudButton>
+    <MudButton Variant="Variant.Filled" OnClick="@(() => @TestApiStockMeta("aapl"))">Stock Meta</MudButton>
+    <MudButton Variant="Variant.Filled" OnClick="@(() => @TestApiStockHistory("aapl", DateTime.Now.AddDays(-7), DateTime.Now))">Stock History</MudButton>
+</MudButtonGroup>
+
+<MudExpansionPanels>
+    <MudExpansionPanel Text="Latest Stock" value ="@LatestStock">
+        No Data!
+    </MudExpansionPanel>
+    <MudExpansionPanel Text="Stock Meta" value="@StockMeta">
+        No Data!
+    </MudExpansionPanel>
+    <MudExpansionPanel Text="Stock History" value="@stockPrices">
+        No Data!
+    </MudExpansionPanel>
+</MudExpansionPanels>
+
+@code {
+
+    ApexChartOptions<StockPrice> _options = new(){
+        Chart = new Chart(){
+            Height = 500
+        }
+    };
+    
+    private ApexChart<StockPrice> chart;
+
+    public string LatestStock { get; set; }
+    public string StockMeta { get; set; }
+    public List<string> StockHistory { get; set; }
+
+    private List<StockPrice> stockPrices { get; set; } = new (){
+        new StockPrice { Date = DateTime.Now, Open = 10, High = 20, Low = 5, Close = 15 }
+    };
+
+    private async Task AppendData(){
+        var max = stockPrices.Max(e => e.Date);
+        var rnd = new Random();
+
+        var newData = new List<StockPrice>(){
+            new StockPrice(){Date = stockPrices.Last().Date.AddDays(1), Open = rnd.Next(1,100), High = rnd.Next(1,100), Low = rnd.Next(1,100), Close = rnd.Next(1,100) }
+        };
+
+        stockPrices.AddRange(newData);
+        await chart.AppendDataAsync(newData);
+    }
+
+    private void TestApiStock(string symbol){
+        Stock? stock = TiingoAPI.GetInstance().GetLatestStockData(symbol);
+        if (stock != null){
+            Console.WriteLine(stock.ToString());
+        }
+    }
+    
+    private void TestApiStockMeta(string symbol){
+        StockMeta? meta = TiingoAPI.GetInstance().GetMetaStockData(symbol);
+        if (meta != null){
+            Console.WriteLine(meta.ToString());
+        }
+    }
+    
+    private void TestApiStockHistory(string symbol, DateTime startDate, DateTime endDate){
+        StockHistory? history = TiingoAPI.GetInstance().GetStockHistoryData(symbol, startDate, endDate);
+        if (history != null){
+            Console.WriteLine(history.ToString());
+        }
+    }
+
+    private class StockPrice{
+        public int Open { get; set; }
+        public int High { get; set; }
+        public int Low { get; set; }
+        public int Close { get; set; }
+        public DateTime Date { get; set; }
+    }
+
+}
