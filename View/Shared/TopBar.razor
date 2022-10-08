@@ -2,7 +2,7 @@
 @using Domain.LogicHandlers
 @using Model.ApiData
 
-@*<MudPaper Elevation="25">
+<MudPaper Elevation="25">
     <MudToolBar>
         <MudGrid>
             <MudItem xs="12" sm="6" md="4">
@@ -23,4 +23,4 @@
     private async Task<IEnumerable<Company>> Search(string needle){
         return TiingoAPI.GetInstance().SearchStock(needle).Companies;
     }
-}*@
+}

@@ -2,13 +2,18 @@
 
 <PageTitle>Home</PageTitle>
 
+<MudThemeProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
 <div class="page">
     <div class="sidebar">
         <NavMenu/>
     </div>
     <div class="row viewport">
         <div class="col-12 top-bar">
-            <TopBar/>
+            @*TODO:Check for Pro Licence (TopBar makes more than 1 Call per second!)*@
+            @*<TopBar/>*@
         </div>
         <main class="page-content">
             <article class="content px-4">
